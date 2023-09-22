@@ -1,8 +1,24 @@
-site_name: My Docs
+site_name: Basic MkDocs Example Project
 theme:
-  name: material
+  name: readthedocs
+  highlightjs: true
 # site_name: MkLorum
 # site_url: https://example.com/
 nav:
   - Home: index.md
   - About: file2.md
+
+ 
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        # See: https://mkdocstrings.github.io/python/usage/
+        python:
+          options:
+            docstring_style: sphinx
+markdown_extensions:
+  - markdown_include.include:
+      base_path: .
+  - admonition
