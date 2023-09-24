@@ -1,2 +1,2 @@
 # MK_DOCS
- MK_DOCS_TEMPLATE
+Nicegui documentation
